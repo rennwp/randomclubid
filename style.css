@@ -1,0 +1,101 @@
+.container a img {
+  width: 40px;
+}
+
+.btn-abu {
+  background-color: #7289da;
+  color: white;
+  border-radius: 30px;
+}
+
+/* Jumbotron */
+.jumbotron {
+  background-image: url(img/hero1.jpg);
+  background-size: cover;
+  height: 600px;
+  padding-top: 19rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  margin-top: -188px;
+  background-position: -300px 0;
+  background-attachment: scroll;
+}
+
+.display-4 {
+  font-weight: 450;
+}
+
+/* panel */
+.panel {
+  background-color: #ffffff;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  margin-top: -100px;
+  border-radius: 0px;
+}
+
+.panel img {
+  margin: 20px;
+}
+
+/* About */
+.about {
+  margin-top: 50px;
+}
+
+.about h5 {
+  font-size: 50px;
+}
+
+/* slide wp */
+.slidewp {
+}
+
+/* footer */
+footer {
+  text-align: center;
+  margin-top: 30px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #7289da;
+}
+
+/* desktop */
+@media (min-width: 992px) {
+  .jumbotron {
+    height: 800px;
+    padding-top: 23rem;
+    background-position: 0 0;
+    background-attachment: fixed;
+  }
+
+  .panel {
+    border-radius: 40px;
+  }
+
+  /* Navbar */
+
+  .nav-link {
+    margin-right: 25px;
+  }
+
+  .nav-link::after {
+    content: "";
+    display: block;
+    margin-right: 18px;
+    width: 0;
+    height: 2px;
+    background: #7289da;
+    transition: width 0.3s;
+  }
+
+  .nav-link:hover::after {
+    content: "";
+    display: block;
+    width: 100%;
+    transition: width 0.3s;
+    margin-bottom: -2px;
+  }
+}
